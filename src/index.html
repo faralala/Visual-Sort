@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="/src/styles/style.css">
+	<title>
+		Визуализация сортировки
+	</title>
+
+</head>
+
+<body>
+	<h1 id="selectedAlgorithm" style="
+	display: flex;
+	justify-content: center;
+	margin: 100px;
+	color: rgb(47, 0, 255);
+">Сортировка пузырьком</h1>
+	<div class="main">
+		<div id="sort-view">
+			<ul></ul>
+		</div>
+		<div class="option">
+			<div class="row">
+				<button id="start">Старт</button>
+				<button id="stop">Стоп</button>
+				<button id="shuffle">Перемешать</button>
+				<select id="algorithm">
+					<option value="bubble" selected>Сортировка пузырьком</option>
+					<option value="insert">Сортировка вставками</option>
+					<option value="selection">Сортировка выбором</option>
+					<option value="quick">Быстрая сортировка</option>
+					<option value="merge">Сортировка слиянием</option>
+				</select>
+				<div class=" input-box">
+					<label class="key" for="amount">Размер</label>
+					<input id="amount" class="value" value="50">
+				</div>
+				<div class="input-box">
+					<label class="key" for="speed">Скорость</label>
+					<input id="speed" class="value" value="50">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src='/src/js/app.js'></script>
+
+</html>
